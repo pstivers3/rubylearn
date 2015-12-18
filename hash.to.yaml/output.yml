@@ -1,0 +1,8 @@
+--- 
+:apache: 
+  :listen_ports: 
+  - 80
+  :prefork: 
+    :startservers: 20
+    :minspareservers: 20
+    :maxspareservers: 40
