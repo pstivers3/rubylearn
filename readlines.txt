@@ -1,0 +1,8 @@
+# fruit count
+## start with apple
+
+apple 1
+pear 2
+ # peach 3
+banana 4
+cherry 5

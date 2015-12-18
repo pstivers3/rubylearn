@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+File.readlines("readlines.txt").each do |line| # read one line at a time
+  # skip blank or commented lines 
+  boc_test=line.match(/^\s*(#|$)/)
+  next if !boc_test.empty? 
+  data=line.split(/\s+/) # split the line into an array
+  fruit=data[0]
+  count=data[1]
+  puts "count = #{count}"
+end
