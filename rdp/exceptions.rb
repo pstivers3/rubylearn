@@ -1,7 +1,9 @@
 #!/usr/bin/ruby
 
 class ZeroDivisionError
-  puts('The ZeroDivisionError class says boom!')
+  def talk 
+    puts('The ZeroDivisionError class says boom!')
+  end
 end
   
 puts("\nexception 1")
@@ -14,7 +16,7 @@ end
 puts("\nexception 2")
 begin
   quotient = 1 / 0   # Boom!
-rescue # ZeroDivisionError
+rescue  ZeroDivisionError
   puts('You tried to divide by zero')
 end
 
@@ -22,7 +24,7 @@ class ExceptionThree
   def test_exception
     puts("\nexception 3")
     numerator = 1
-    denominator = 0
+    denominator = 1
     if denominator == 0
       raise ZeroDivisionError
     end
