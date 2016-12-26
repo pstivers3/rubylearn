@@ -28,4 +28,9 @@ class EmptyTest < Test::Unit::TestCase
     assert (! @one_element_array.empty?)
     assert (! @long_array.empty?)
   end
+
+## throws errors
+# test=EmptyTest.new('a')
+# test.test_empty_on_strings
+
 end
