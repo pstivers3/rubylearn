@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# ref: http://juixe.com/techknow/index.php/2006/06/15/mixins-in-ruby/
+
 # Convert a integer value to English.
 module Stringify
   # Requires an instance variable @value
